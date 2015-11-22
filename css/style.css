@@ -1,0 +1,418 @@
+/*
+ * Css formatting for all the web pages except index.
+ *
+ * Created by: LeYing Tran 17/09/2015
+ * Last modified by: LeYing Tran 2/10/2015
+ */
+
+@font-face {
+    font-family: "Alex Brush";
+    src: url("../Alex_Brush/AlexBrush-Regular.eot") format("eot"),
+    url("../Alex_Brush/AlexBrush-Regular.woff") format("woff"),
+    url("../Alex_Brush/AlexBrush-Regular.ttf") format("truetype"),
+    url("../Alex_Brush/AlexBrush-Regular.svg#AlexBrush-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #4f2700;
+    background-color: #ffecdb;
+}
+
+input[type="button"] {
+    width: 100px;
+    height: 35px;
+    font-family: Helvetica, sans-serif;
+    font-size: 11pt;
+    background-color: rgba(79, 39, 0, 0.9);
+    color: #ffecdb;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: 100px;
+    height: 35px;
+    font-family: Helvetica, sans-serif;
+    font-size: 11pt;
+    background-color: rgba(79, 39, 0, 0.9);
+    color: #ffecdb;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+input[type="button"]:hover {
+    color: #4ca4ff;
+    background-color: inherit;
+    border: 2px solid #4ca4ff;
+}
+
+input[type="submit"]:hover {
+    color: #4ca4ff;
+    background-color: rgba(79, 39, 0, 0.9);
+    border: 2px solid #4ca4ff;
+}
+
+input[type="submit"]:disabled {
+    color: #ffecdb;
+    background-color: rgba(79, 39, 0, 0.9);
+    border: none;
+}
+
+/* Navigation Bar */
+.navbar {
+    height: 51px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14pt;
+    /*margin-top: 50px;
+    margin-bottom: -100px;*/
+    z-index: 5;
+}
+
+.navbar-transparent {
+    background-image: none;
+    background-color: #4f2700;
+    color: inherit;
+    opacity: 0.90;
+}
+
+.navbar-transparent .navbar-nav > li > a {
+    color: #ffecdb;
+    background-color: #4f2700;
+}
+
+.navbar-transparent .navbar-nav > li.disabled > a:hover {
+    color: #ffecdb;
+    background-color: inherit;
+}
+
+.navbar-transparent .navbar-nav > li > a:hover,
+.navbar-transparent .navbar-nav > li > a:focus {
+    color: #4ca4ff;
+    background-color: #4f2700;
+}
+
+.navbar-transparent .navbar-toggle {
+    border: 2px solid #ffecdb;
+}
+
+.navbar-transparent .navbar-toggle:hover {
+    background-color: #4ca4ff;
+    color: inherit;
+}
+
+.navbar-transparent .navbar-toggle .icon-bar {
+    background-color:  #ffecdb;
+    color: inherit;
+}
+
+.navbar-nav {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.navbar .notAllowed {
+    color: #ffecdb;
+    padding: 10px;
+    background-color: #4f2700;
+}
+
+
+/* Header and headings */
+header {
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 350px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Alex Brush', Helvetica, sans-serif;
+    font-size: 150px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 70px 10px 5px 10px;
+    color: #cc6500;
+    background-color: inherit;
+}
+
+h2 {
+    color: #4f2700;
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    margin: 0px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 24pt;
+    background-color: inherit;
+}
+
+h3 {
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    margin: 0px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 24pt;
+}
+
+/* Main page */
+#main {
+    text-align: center;
+    margin: 40px auto;
+    padding-bottom: 70px;
+}
+
+section {
+    border: 2px solid #4f2700; 
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    width: 450px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+section img {
+    border-radius: 10px; 
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.detail table {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.detail th {
+    padding: 10px;
+    font-size: 14pt;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.detail td {
+    padding: 10px;
+}
+
+
+#makebooking, #goBookings {
+    width: 150px;   
+}
+
+#reserve input {
+    margin: 10px auto;   
+}
+
+#checkAvailability {
+    width: 150px;   
+}
+
+#available, #displayBookings, #editRooms, #addRoomForm, #editRoomForm, #editHotelRoomsForm {
+    border: 2px solid #4f2700;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px;
+    padding: 5px;
+    vertical-align: top;
+}
+
+#availableRooms table, #displayBookings table, #editRooms table, #editHotelRoomsForm table {
+    margin: 10px auto;
+    text-align: center;
+}
+
+#availableRooms th, #displayBookings th, #editRooms th, #editHotelRoomsForm th {
+    font-size: 14pt;
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px 20px;
+}
+
+#availableRooms td, #displayBookings td, #editRooms td, #editHotelRoomsForm td {
+    padding: 5px 20px;
+}
+
+#bookingsConf, .deleteConf {
+    margin: auto;
+}
+
+#bookingsConf td, .deleteConf td {
+    padding: 5px 20px;
+}
+
+.book, .cancelBook, .deleteRoom, .edit {
+    width: 20px;
+    height: 20px;
+}
+
+.errors {
+    color: red;
+    background-color: inherit;
+}
+
+#chooseRooms{
+    padding: 7px;
+}
+
+#adminOptions {
+    border: 2px solid #4f2700;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+    padding: 10px 20px;
+}
+
+#manBookingsLink, #manHotelsLink, #editRoomsLink {
+    width: 150px;
+    margin: 10px auto;
+    display: block;
+}
+
+#addRoomButton {
+    width: 100px;
+}
+
+#addRoomForm, #editRoomForm {
+    margin: 20px 20px;
+    padding: 10px;
+}
+
+#addRoomForm input, #editRoomForm input {
+    margin: 10px 5px;
+    width: 70px;
+}
+
+#addRoomForm #description, #editRoomForm #description {
+    width: 150px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #4f2700;
+    height: 70px;
+    color: #ffecdb;
+    text-align: right;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    opacity: 0.9;
+}
+
+/* Resize windows */
+@media screen and (max-width: 860px) {
+    body {
+        font-size: 10pt;   
+    }
+    header {
+        height: 220px;
+    }
+    h1 {
+        font-size: 90px;
+        padding: 30px 0px 0px 0px;
+        margin: auto;
+    }
+    h2 {
+        font-size: 20pt;
+        margin: auto;
+    }
+    h3 {
+        font-size: 20pt;
+        margin: auto;
+    }
+    section {
+        width: 350px;
+    }
+    .detail th, #availableRooms th, #displayBookings th, #editRooms th, #editHotelRoomsForm th {
+        padding: 5px;
+        font-size: 12pt;
+    }
+    #deleteBooking, #deleteRooms, #editHotelRooms {
+        width: 60px;
+        height: 30px;
+        font-size: 10pt;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    body {
+        font-size: 10pt;   
+    }
+    header {
+        height: 220px;
+    }
+    h1 {
+        font-size: 65px;
+        padding: 40px 0px 0px 0px;
+        margin: auto;
+    }
+    h2 {
+        font-size: 16pt;
+        margin: auto;
+    }
+    h3 {
+        font-size: 16pt;
+        margin: auto;
+    }
+    input[type="button"], input[type="submit"] {
+        width: 80px;
+    }
+    section {
+        width: 280px;
+        margin: 20px auto;
+    }
+    #available, #displayBookings, #editRooms, #editHotelRoomsForm {
+        margin: 20px auto;
+    }
+    .detail td, #availableRooms td {
+        padding: 10px 3px;
+        font-size: 10pt;
+    }
+    .detail th, #availableRooms th {
+        padding: 10px 5px 5px 5px;
+        font-weight: bolder;
+        font-size: 11pt;
+    }
+    #displayBookings td, #editRooms td, #editHotelRoomsForm td {
+        font-size: 9pt;
+        padding: 10px 2px;
+    }
+    #displayBookings th, #editRooms th, #editHotelRoomsForm th {
+        padding: 10px 2px 2px 2px;
+        font-weight: bolder;
+        font-size: 9.5pt;
+    }
+    .deleteConf td {
+        padding: 5px 5px;
+    }
+    .cancelBook, .deleteRoom, .edit {
+        width: 15px;
+        padding: 15px;
+    }
+    #deleteBooking, #deleteRooms {
+        width: 45px;
+        height: 30px;
+        font-size: 8pt;
+        margin: auto;
+    }
+    #editHotelRooms {
+        width: 30px;
+        height: 30px;
+        font-size: 8pt;
+        margin: auto;
+    }
+
+}

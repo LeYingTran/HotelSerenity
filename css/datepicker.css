@@ -1,0 +1,44 @@
+/**
+ * Datepicker calendar css formatting.
+ *
+ * Created by: LeYing Tran 6/08/2015
+ * Last modified by: LeYing Tran 21/08/2015
+ */
+ 
+.ui-widget-header {
+     background-color: #4f2700;
+     border: none;
+     border-bottom: 1px solid #ffecdb;
+     background: none;
+     color: #ffecdb;
+}
+
+.ui-widget-content {
+    color: #ffecdb;
+    text-align: center;
+    background: none;
+    background-color: #4f2700;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+    outline: none;
+    color: #ffecdb;
+    border: 1px solid transparent;
+    background-color: #4f2700;
+}
+
+.ui-datepicker-calendar th{
+    text-align: center;
+}
+
+.ui-datepicker-calendar td a {
+    text-align: center;
+}
+
+.ui-datepicker-today a.ui-state-highlight{
+    color: #4ca4ff;
+    background-color: inherit;
+}
+
+
+
